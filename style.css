@@ -1,0 +1,261 @@
+/*
+Theme Name: Newsio
+Theme URI: https://themearile.com/newsio-theme/
+Template: newsexo
+Author: ThemeArile
+Author URI: https://themearile.com
+Description: Newsio is a clean, modern blog news and magazine WordPress theme that is perfect for any Blog/Magazine, news, and even for all variants of publishers websites. It has a unique design for a visually stunning layout that makes your content displays beautiful and easy to read for any media device. Even it is user-friendly, SEO-ready, effortlessly, lightweight, and optimized for top performance and Core Web Vitals. The theme is best suitable for news, newspapers, magazines, publishers, editors, news portals, personal blogs, dynamic news, business blogs, news editorials, guides, journalism, lifestyle blogs, travel blogs, niche blog, food blog, fashion magazine, beauty blog, affiliate blog, multimedia blog, guest blogging and reviews websites. It also has flexible and versatile layouts enough for essential needs with unlimited colors, unlimited Google fonts, typography, responsive design, and Rtl language support. It is designed to be highly SEO-friendly that can help optimize your website on search engine performance, making it easier to find for potential visitors and the theme provides predefined beautiful demos that can be imported with one click in less time. Newsio also supports popular free and premium WordPress plugins such as Elementor, Yoast SEO, WooCommerce, Gutenberg, Contact Form 7, Jetpack, Google Analytics, and much more. Check the demo of Newsio Pro https://newsexo-pro-two.themearile.com/.
+Version: 1.6
+Tested up to: 6.6
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: newsio
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
+*/
+
+/*--------------------------------------------------
+=>> Body Custom Background Css
+--------------------------------------------------*/
+
+body.custom-background .theme-bg-dark,
+body.custom-background .theme-bg-default, 
+body.custom-background .theme-blog.theme-bg-grey {
+    background-color: transparent !important;
+}
+
+/*--------------------------------------------------
+=>> Wrapper Background Css
+--------------------------------------------------*/
+
+#wrapper {
+    background-color: #f0f1f3;
+}
+
+/*--------------------------------------------------------------
+=>> Typography Css
+--------------------------------------------------------------*/
+
+h1, h2, h3,
+h4, h5, h6 {
+	letter-spacing: 1px;
+}
+.navbar.navbar-dark .nav .menu-item .nav-link {
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: Khand;
+}
+.navbar .nav .menu-item .dropdown-item {
+	font-family: Khand;
+    letter-spacing: 1px;
+	font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+/*--------------------------------------------------------------
+=>> Site Header
+--------------------------------------------------------------*/
+
+.site-header {
+    background: #000000 !important;
+}
+.head-contact-info li, .site-header .custom-social-icons .followus {
+    color: #ffffff !important;
+}
+.custom-social-icons .followus:before, .custom-social-icons .followus:after {
+    background: #ffffff !important;
+}
+.site-header .custom-social-icons li > a {
+    color: #ffffff !important;
+}
+
+/*--------------------------------------------------------------
+=>> Site Branding & Advertisement
+--------------------------------------------------------------*/
+
+.site-branding .site-title a, 
+.site-branding .site-description {
+	color: #fff;
+}
+.site-branding .site-title a:hover, 
+.site-branding .site-title a:focus, 
+.site-branding .site-description:hover, 
+.site-branding .site-description:focus {
+	color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+=>> Big News Section - Featured News
+--------------------------------------------------------------*/
+
+.big-news-section .overlay-news-area.vrsn-two {
+	background-color: #fff;
+    border: 1px solid #ebebeb;
+    padding: 0.438rem;
+}
+
+/*--------------------------------------------------------------
+=>> Featured News Section
+--------------------------------------------------------------*/
+
+.featured-news-section .overlay-news-area.vrsn-two {
+	background-color: #fff;
+    border: 1px solid #ebebeb;
+    padding: 0.438rem;
+}
+
+/*--------------------------------------------------------------
+=>> Grid View News Section
+--------------------------------------------------------------*/
+
+.grid-view-news-area.vrsn-two {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 0.938rem 0.75rem;
+}
+
+/*--------------------------------------------------------------
+=>> List View News Section
+--------------------------------------------------------------*/
+
+.list-view-news-area .post.vrsn-two {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 0.938rem 0.75rem;
+}
+
+/*--------------------------------------------------------------
+=>> Blog Meta
+--------------------------------------------------------------*/
+
+.entry-meta > span { 
+	margin: 0 0.875rem 0 0 !important;
+}
+.entry-meta > span i {
+    margin-right: 0.350rem;
+}
+.entry-meta .avatar-default {
+    margin-right: 0.350rem;
+}
+/*Category Colors*/
+.entry-meta .cat-links .links-bg:nth-child(2) {
+	background: #000;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(3) {
+	background: #56ca71;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(4) {
+	background: #6610f2;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(5) {
+	background: #ff5d20;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(6) {
+	background: #0263D0;
+	color: #fff;
+}
+/*Pagination*/
+.navigation.pagination .nav-links .page-numbers, 
+.navigation.pagination .nav-links a {
+	border: 1px solid #ebebeb;
+}
+.pagination a {
+	background-color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+=>> All Blog Posts Common Classes for Spacing
+--------------------------------------------------------------*/
+
+#news-slider.vrsn-two, 
+#featured-news-slider.vrsn-two {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 0.75rem;
+}
+@media (min-width: 200px) and (max-width: 991.98px) {
+	#featured-news-slider.owl-carousel.vrsn-two .post.overlay-news-area {
+		margin-bottom: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+=>> Blog Single
+--------------------------------------------------------------*/
+
+.post-author-area.vrsn-two {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+}
+.theme-comment-area.vrsn-two { 
+	background-color: #fff;
+    border: 1px solid #ebebeb;
+    padding: 0.938rem 0.75rem;
+}
+.theme-comment-form.vrsn-two .comment-form { 
+	background-color: #fff;
+    border: 1px solid #ebebeb;
+    padding: 0.938rem 0.75rem;
+}
+
+/*--------------------------------------------------------------
+=>> Sidebar Widgets
+--------------------------------------------------------------*/
+
+.sidebar.vrsn-two .widget {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 0.938rem 0.75rem;
+	position: relative;
+    -webkit-transition: all .1s;
+    -ms-transition: all .1s;
+    -moz-transition: all .1s;
+    transition: all .1s;
+}
+.sidebar.vrsn-two .widget:hover {
+	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.1);
+	border-top: 2px solid #13171e;
+	-webkit-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;	
+	transition: all .5s;
+	transform : translateY(-5px);
+}
+/*List View Post Widget*/
+.list-view-post-widget .post .entry-header .entry-title {
+    line-height: 1.5;
+}
+
+/*--------------------------------------------------------------
+=>> Theme Breadcrumb Area
+--------------------------------------------------------------*/
+
+#wrapper .page-breadcrumb { 
+	background-color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+=>> Footer Section & Widgets
+--------------------------------------------------------------*/
+
+.site-footer-overlay::before {	
+	background-color: #000000;
+}
+.footer-sidebar .widget .wp-block-read-more {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    outline: none;
+}
+.footer-sidebar .widget .wp-block-read-more:hover, 
+.footer-sidebar .widget .wp-block-read-more:focus {
+    text-decoration-style: dotted;
+}
